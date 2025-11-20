@@ -21,9 +21,15 @@ if 'package_manager' not in st.session_state:
 if 'search_results' not in st.session_state:
     st.session_state['search_results'] = []
 
+import os
+
 # --- Sidebar ---
 with st.sidebar:
-    st.image("assets/logo.png", use_container_width=True)
+    logo_path = os.path.join(os.path.dirname(__file__), "assets", "logo.png")
+    if os.path.exists(logo_path):
+        st.image(logo_path, use_container_width=True)
+    else:
+        st.warning(f"Logo not found at {logo_path}")
     st.title("📦 One-Shot Installer")
     st.markdown("---")
     

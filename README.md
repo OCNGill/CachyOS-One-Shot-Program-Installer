@@ -1,8 +1,6 @@
 # CachyOS One-Shot Program Installer
 
-<p align="center">
-	<img src="assets/logo.png" alt="Gillsystems logo" width="800">
-</p>
+
 
 **Version:** 1.0.0  
 **Status:** Active Development  
@@ -102,3 +100,7 @@ If you find this project helpful, you can support ongoing work — thank you!
 ## 📄 License
 
 Private Project - Gillsystems
+
+<p align="center">
+	<img src="assets/logo.png" alt="Gillsystems logo" width="800">
+</p>
