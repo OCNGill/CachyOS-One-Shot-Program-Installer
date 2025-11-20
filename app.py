@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
+import os
 from wrappers.unified_search import unified_search
 from manager.package_manager import PackageManager
 from utils.system_monitor import get_disk_usage, get_ram_usage
@@ -20,8 +21,6 @@ if 'package_manager' not in st.session_state:
 
 if 'search_results' not in st.session_state:
     st.session_state['search_results'] = []
-
-import os
 
 # --- Sidebar ---
 with st.sidebar:
